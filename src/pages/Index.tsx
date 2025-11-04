@@ -109,8 +109,12 @@ const Index = () => {
           <header className="border-b border-[hsl(var(--border))] p-4 lg:p-6 bg-card shadow-sm">
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <Calendar className="h-6 w-6 text-primary" />
+                <div className="flex items-center justify-center h-10 w-10 rounded-lg overflow-hidden">
+                  <img 
+                    src="/logo.png" 
+                    alt="SmartFlex Logo" 
+                    className="h-full w-full object-contain"
+                  />
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
