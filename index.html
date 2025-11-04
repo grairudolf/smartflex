@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartFlex Timetable - Organize Your Weekly Schedule</title>
+    <meta name="description" content="Create and manage your weekly class schedule with drag-and-drop ease. SmartFlex Timetable helps students organize courses, track lecturers, and optimize their study time." />
+    <meta name="author" content="SmartFlex" />
+
+    <meta property="og:title" content="SmartFlex Timetable - Drag & Drop Schedule Manager" />
+    <meta property="og:description" content="Build your perfect weekly schedule with our intuitive drag-and-drop timetable app for students." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/placeholder.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@SmartFlex" />
+    <meta name="twitter:image" content="/placeholder.svg" />
+    
+    <script>
+      // Check for saved theme preference or use system preference
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+        document.documentElement.classList.remove('light');
+      } else {
+        document.documentElement.classList.add('light');
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+
+  <body class="bg-white dark:bg-gray-900 transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
